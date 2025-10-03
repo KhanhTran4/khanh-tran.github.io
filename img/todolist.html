@@ -116,13 +116,14 @@
                     // Create the list item and its content
                     const newTask = document.createElement('li');
                     newTask.innerHTML = `<span>${taskText}</span>
-                    <div class="task-buttons">
-                <button class="status-button started">Started</button>
-                <button class="status-button halfway">50% done</button>
-                <button class="status-button complete">100% done</button>
-                <button class="delete-button">Delete</button>
-            </div>
-                                       
+                   <button class="start-button">Started</button>`;
+                   <button class="half-button">50% done</button>`;
+                       <button class="full-button">100% done</button>`;
+                    <button class="delete-button">Delete</button>`;
+                    
+    
+            
+                                  
                     // Add a click listener to the new task to toggle 'completed'
                     newTask.addEventListener('click', function(event) {
                         // Check if the click was on the list item itself, not the delete button
